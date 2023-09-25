@@ -23,7 +23,7 @@ const RegistrationScreen = () => {
   const [isHiddenPass, setIsHiddenPass] = useState(true);
   const [currentFocused, setCurrentFocused] = useState('');
 
-  const clearUserForm = () => {
+  const clearForm = () => {
     setLogin('');
     setEmail('');
     setPassword('');
@@ -31,7 +31,7 @@ const RegistrationScreen = () => {
 
   const onRegister = () => {
     console.log({ login, email, password });
-    clearUserForm();
+    clearForm();
   };
 
   const handleFocus = (currentFocusInput = '') => {

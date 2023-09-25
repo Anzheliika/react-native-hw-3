@@ -21,14 +21,14 @@ const LoginScreen = () => {
   const [isHiddenPass, setIsHiddenPass] = useState(true);
   const [currentFocused, setCurrentFocused] = useState('');
 
-  const clearUserForm = () => {
+  const clearForm = () => {
     setEmail('');
     setPassword('');
   };
 
   const onLogin = () => {
     console.log({ email, password });
-    clearUserForm();
+    clearForm();
   };
 
   const handleFocus = (currentFocusInput = '') => {
